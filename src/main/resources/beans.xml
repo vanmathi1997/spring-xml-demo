@@ -5,11 +5,12 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-<bean  name="movie" class="com.stackroute.domain.Movie" autowire="byName"/>
-  <bean  name="movie1" class="com.stackroute.domain.Movie" autowire="byType"/>
+<bean  name="movie" class="com.stackroute.domain.Movie" autowire="byName" />
   <bean name="actor" class="com.stackroute.domain.Actor">
    <constructor-arg name="name" value="Rajini"/>
    <constructor-arg name="gender"  value="male"/>
       <constructor-arg name="age" value="60"/>
   </bean>
+    <bean id="BeanlifeCycle" class="com.stackroute.demo.BeanLifeCycle" init-method="custominit" destroy-method="customdestroy"/>
+
 </beans>
