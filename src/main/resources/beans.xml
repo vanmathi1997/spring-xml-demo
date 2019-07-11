@@ -12,6 +12,4 @@
    <constructor-arg name="gender"  value="male"/>
       <constructor-arg name="age" value="60"/>
   </bean>
-
-
 </beans>

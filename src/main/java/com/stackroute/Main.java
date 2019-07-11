@@ -2,6 +2,7 @@ package com.stackroute;
 
 import com.stackroute.domain.Movie;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main
 {
@@ -14,6 +15,7 @@ public class Main
         //autowire by-type
       Movie movie1=context.getBean("movie1",Movie.class);
       movie1.display();
+
 
 
 
