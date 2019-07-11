@@ -12,5 +12,6 @@
       <constructor-arg name="age" value="60"/>
   </bean>
     <bean id="BeanlifeCycle" class="com.stackroute.demo.BeanLifeCycle" init-method="custominit" destroy-method="customdestroy"/>
+    <bean id="BeanPostProcessorDemo" class="com.stackroute.demo.BeanPostProcessorDemo"/>
 
 </beans>
